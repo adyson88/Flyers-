@@ -1,4 +1,4 @@
-// Mobile App for Flyers’ 
+// Mobile App for Flyers’. 
 
 import java.util.Scanner;
 
@@ -10,9 +10,9 @@ enum Delivery
  
 public class Fastfood {
  
-       // Mode of delivery
+       // Mode of delivery.
 	
-       // Displays type of delivery (i.e. Pickup or Delivery)
+       // Displays type of delivery (i.e. Pickup or Delivery).
 	
        @SuppressWarnings("resource")
 	public static int modeMenu()
@@ -34,9 +34,9 @@ public class Fastfood {
              return choice;
        }
       
-       // Items available at Flyers'
+       // Items available at Flyers'.
        
-       // Displays price of the item selected
+       // Displays price of the item selected.
        
        public static float itemsMenu()
        {
@@ -89,7 +89,9 @@ public class Fastfood {
              System.out.println("Welcome to Flyers' Restaurant ");
             
              deliveryOption = modeMenu();
-             // if delivery is selected, then input the zip code and check if delivery can be done
+             
+             //Add zip code and check if delivery is available, if delivery is selected. 
+             
              if(deliveryOption == 2 )
              {
                     System.out.print("Enter your zip code : ");
@@ -111,7 +113,7 @@ public class Fastfood {
                            }                  
              }
             
-             // This loop will take the order
+             // This loop will take the order.
                         
              while(itemsChoice.equalsIgnoreCase("y"))
             	 
@@ -125,7 +127,7 @@ public class Fastfood {
                     
              }
              
-             // Tax calculation
+             // Tax calculation.
              
              price += 0.05*price;
              if(deliveryOption == 2 )
@@ -139,7 +141,8 @@ public class Fastfood {
                     
              }
             
-             // print the total bill
+             // print the total bill.
+             
              System.out.println(" Your total bill = $"+price+". ");
             
        }
